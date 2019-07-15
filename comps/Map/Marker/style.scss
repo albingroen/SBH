@@ -1,0 +1,15 @@
+.marker {
+  background: orangered;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out 0s;
+  transform: rotate(45deg) translate(-70%, -10%);
+  opacity: 0.5;
+  &:hover {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: 0.2s ease-in-out 0s;
+    opacity: 1;
+  }
+}

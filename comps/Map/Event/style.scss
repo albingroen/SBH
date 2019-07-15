@@ -1,0 +1,80 @@
+.event-card {
+  position: relative;
+  margin-bottom: 1rem;
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 5px;
+  width: 400px;
+  color: white;
+  animation: slideUp 0.5s linear;
+
+  i {
+    font-size: 1em;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: white;
+    opacity: 0.25;
+    cursor: pointer;
+    transition: 0.1s ease-in-out 0s;
+    padding: 0.5rem;
+    &:hover {
+      opacity: 1;
+      transition: 0.1s ease-in-out 0s;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-right: 0.5rem;
+  }
+
+  p {
+    opacity: 0.75;
+  }
+
+  a {
+    color: white;
+    display: block;
+    border-radius: 5px;
+    padding: 0.85rem;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    background: #333;
+    margin-top: 1.5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.closing {
+  animation: slideOut 0.5s linear;
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: initial;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+}
